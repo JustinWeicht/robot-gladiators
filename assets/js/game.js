@@ -88,7 +88,7 @@ var startGame = function() {
         // if we're not at the last enemy in the array
         if (i < enemyNames.length -1 && playerHealth > 0) {
             // ask if player wants to use the store before the next round
-            var storeConfirm = window.confirm("The fight is over, visit the store before the next round?");
+            var storeConfirm = window.confirm("The fight is over, visit the store before the next round? You currently have " + playerMoney + " dollars.");
 
             //if yes, take them to the store() function
             if (storeConfirm) {
